@@ -1,0 +1,7 @@
+name,quadrant,ring,isNew,description
+Test Adopt,Techniques,Adopt,TRUE,<p>Test Adopt</p>
+Test Assess,Platforms,Assess,TRUE,<p>Test Assess</p>
+Test Adopt,Tools,Adopt,TRUE,<p>Test Adopt</p>
+Test Hold,Tools,Hold,TRUE,<p>Test Hold</p>
+Test Trial,languages-and-frameworks,Trial,TRUE,<p>Test Trial</p>
+Test Assess,languages-and-frameworks,Assess,TRUE,<p>Test Assess</p>
