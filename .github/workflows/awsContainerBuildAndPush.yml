@@ -46,5 +46,5 @@ jobs:
         PACKAGE_NAME: eMarketerOSS.TechnologyRadar
         IMAGE_TAG: 1.${{ github.run_number }}
       run: |
-        octo pack --id $ECR_REPOSITORY --version $IMAGE_TAG --basePath=.github/workflows --outFolder ./out --format zip
-        octo push --package ./out/$ECR_REPOSITORY.$IMAGE_TAG.zip  --server $OCTOPUS_SERVER --apiKey $OCTOPUS_APIKEY
+        octo pack --id $PACKAGE_NAME --version $IMAGE_TAG --basePath=.github/workflows --outFolder ./out --format zip
+        octo push --package ./out/$PACKAGE_NAME.$IMAGE_TAG.zip  --server $OCTOPUS_SERVER --apiKey $OCTOPUS_APIKEY
