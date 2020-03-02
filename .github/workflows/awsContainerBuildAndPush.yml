@@ -1,4 +1,4 @@
-o# Build Container and Push Metadata to Deployment Server
+# Build Container and Push Metadata to Deployment Server
 on:
   push:
     branches:
