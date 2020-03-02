@@ -24,7 +24,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: build-your-own-radar
+        ECR_REPOSITORY: technologyradar
         IMAGE_TAG: 1.${{ github.run_number }}
       run: |
         # Build a docker container and push it to ECR
