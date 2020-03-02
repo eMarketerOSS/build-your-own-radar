@@ -1,4 +1,4 @@
-# Build Container and Push Metadata to Deployment Server
+o# Build Container and Push Metadata to Deployment Server
 on:
   push:
     branches:
@@ -43,7 +43,7 @@ jobs:
       env:
         OCTOPUS_APIKEY: ${{ secrets.OCTOPUS_APIKEY }}
         OCTOPUS_SERVER: ${{ secrets.OCTOPUS_SERVER }}
-        ECR_REPOSITORY: build-your-own-radar
+        ECR_REPOSITORY: technologyradar
         IMAGE_TAG: 1.${{ github.run_number }}
       run: |
         octo pack --id $ECR_REPOSITORY --version $IMAGE_TAG --basePath=.github/workflows --outFolder ./out --format zip
